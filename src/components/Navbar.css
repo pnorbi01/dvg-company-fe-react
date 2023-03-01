@@ -1,0 +1,42 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation-menu {
+    text-align: center;
+    padding: 10px 57px;
+    border-right: 1px solid #000;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-menu:hover {
+    background-color: #242424;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.navigation-menu:first-child {
+    border-left: 1px solid #000;
+}
+
+@media screen and (max-width: 1700px) {
+    .navigation-menu {
+        padding: 5px 35px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .navigation-menu {
+        padding: 5px 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navigation {
+        display: none;
+    }
+}

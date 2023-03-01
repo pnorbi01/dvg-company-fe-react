@@ -1,0 +1,79 @@
+.brand-container {
+    padding-top: 83px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-title h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    position: relative;
+    padding-bottom: 44px;
+}
+
+.brand-title {
+    text-align: center;
+}
+
+.brand-title h1::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 524px;
+    height: 3px;
+    top: 5;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.brand-elements-container {
+    padding-top: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.brand-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 161px;
+    position: relative;
+}
+
+.brand-element span {
+    position: absolute;
+    bottom: 0;
+}
+
+.brand-container .brand-btn {
+    text-transform: none;
+    padding: 15px 16px;
+    margin: 75px 0px;
+}
+
+@media screen and (max-width: 970px) {
+    .brand-elements-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .brand-title h1::before {
+        width: 250px;
+    }
+}
+

@@ -1,0 +1,31 @@
+:root {
+    --primary: #BF0F0F;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn--outline {
+    border-radius: 50px;
+    background-color: #BF0F0F;
+    color: #242424;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 1px solid #BF0F0F;
+    box-shadow: 5px 5px 25px 1px #242424;
+    transition: all 0.3s ease-out;
+  }
+  
+  .btn--large:hover,
+  .btn--medium:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    border: 1px solid #FFF;
+    color: #242424;
+    transition: 250ms;
+  }

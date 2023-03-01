@@ -1,0 +1,48 @@
+.popup {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, 0);
+    background-color: #242424;
+    display: none;
+    padding-top: 15px;
+  }
+
+  .popup .content i {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  .popup .content i:hover {
+    cursor: pointer;
+    color: #0F0;
+  }
+
+  .popup span {
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 999px) {
+    .popup {
+      height: 100px;
+      text-align: center;
+    }
+
+    .popup .content span {
+      font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .popup {
+      height: 140px;
+    }
+    .popup .content span {
+      font-size: 15px;
+    }
+  }

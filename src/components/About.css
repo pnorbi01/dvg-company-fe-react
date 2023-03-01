@@ -1,0 +1,175 @@
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 73px 0px;
+    gap: 3.5rem;
+}
+
+.about-image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    object-fit: contain;
+}
+
+.about-description {
+    position: relative;
+    width: 50%;
+    height: 550px;
+    padding-top: 48px;
+}
+
+.about-description .about-btn {
+    position: absolute;
+    bottom: 0;
+    padding: 15px 16px;
+    text-transform: none;
+}
+
+.companyName {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.companyName::before {
+    content: '';
+    position: absolute;
+    background-color: #BF0F0F;
+    width: 137px;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+}
+
+.profession {
+    width: 40%;
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.profession::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(196, 196, 196, 0.4);
+    width: 450px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+.description {
+    width: 80%;
+    padding-top: 50px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1550px) {
+    .about-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-description {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .description {
+        width: 100%;
+        padding-top: 25px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .companyName::before {
+        content: '';
+        position: absolute;
+        background-color: #BF0F0F;
+        width: 137px;
+        height: 6px;
+        top: 5;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    
+    .profession::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(196, 196, 196, 0.4);
+        width: 450px;
+        height: 3px;
+        top: 5;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .profession {
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .profession::before {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .profession::before {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .companyName {
+        font-size: 25px;
+    }
+
+    .profession {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .about-image img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .profession::before {
+        top: 5;
+        bottom: 0;
+        margin: 0 auto;
+        left: -10px;
+        right: 0;
+    }
+}
